@@ -24,11 +24,12 @@ public class Lab_03_DuplicateInString {
 
             // Print duplicates
             System.out.println("\nDuplicate characters in the string:");
-            for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
-                if (entry.getValue() > 1) {
-                    System.out.println(entry.getKey() + " → " + entry.getValue() + " times");
-                }
+        for (Character ch : charCountMap.keySet()) {
+            int count = charCountMap.get(ch);
+            if (count > 1) {
+                System.out.println(ch + " → " + count + " times");
             }
+        }
 
             sc.close();
         }
