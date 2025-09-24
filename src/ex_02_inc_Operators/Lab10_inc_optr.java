@@ -6,6 +6,10 @@ public class Lab10_inc_optr {
         int n = ++m + m++;
         System.out.println("m = " + m);
         System.out.println("n = " + n);
+        int a = 10;
+        int b = a++;
+        System.out.println(a);
+        System.out.println(b);
 
     }
 }
